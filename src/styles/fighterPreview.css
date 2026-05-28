@@ -1,0 +1,64 @@
+.fighter-preview___root {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 1rem;
+}
+
+.fighter-preview___right {
+  align-items: flex-end;
+}
+
+.fighter-preview___left {
+  align-items: flex-start;
+  
+}
+
+.fighter-preview___img {
+  height: 370px;
+  object-fit: cover;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.fighter-preview___info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fighter-preview___name {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fcf9f9;
+}
+
+.fighter-preview___stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.fighter-preview___stat {
+  margin: 0;
+  font-size: 1.0rem;
+  color: #fffafa;
+  font-weight: 700;
+}
+.fighter-preview___reselect-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ba0303;
+  color: #f8f9f4;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.fighter-preview___reselect-btn:hover {
+  background-color: #8b0202;
+}

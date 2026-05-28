@@ -1,0 +1,188 @@
+.arena___root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('../../resources/arena.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arena___battlefield {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.arena___right-fighter img {
+  transform: scaleX(-1);
+}
+
+.arena___fighter img {
+  height: 380px;
+}
+
+.arena___fight-status {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+}
+
+.arena___fighter-name {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  font-size: 26px;
+  font-family: 'Arial Black';
+  font-weight: 700;
+}
+
+.arena___fighter-indicator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.arena___health-indicator {
+  width: 100%;
+  height: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.arena___health-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #ebd759;
+}
+.arena___ko-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.arena___ko-text {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ba0303;
+  text-shadow: 0 0 20px rgba(186, 3, 3, 0.8), 0 0 40px rgba(186, 3, 3, 0.5);
+  animation: koShake 0.1s infinite, koFade 2s ease-out forwards;
+  letter-spacing: 10px;
+}
+
+@keyframes koShake {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-5px, -5px) scale(1.1);
+  }
+}
+
+@keyframes koFade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -50px) scale(0.8);
+  }
+}
+.arena___fight-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.arena___fight-text {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #ffeb3b;
+  text-shadow: 0 0 30px rgba(255, 235, 59, 0.9), 0 0 60px rgba(255, 235, 59, 0.6);
+  animation: fightPop 1.5s ease-out forwards;
+  letter-spacing: 20px;
+}
+
+@keyframes fightPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.arena___ko-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.arena___ko-text {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ba0303;
+  text-shadow: 0 0 20px rgba(186, 3, 3, 0.8), 0 0 40px rgba(186, 3, 3, 0.5);
+  animation: koShake 0.1s infinite, koFade 2s ease-out forwards;
+  letter-spacing: 10px;
+}
+
+@keyframes koShake {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-5px, -5px) scale(1.1);
+  }
+}
+
+@keyframes koFade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -50px) scale(0.8);
+  }
+}
